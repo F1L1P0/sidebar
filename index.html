@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <title>Responsive side bar</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()">
+            <i class="bx bx-menu"
+              ><span class="sidebar-logo">Filip Drábek</span></i
+            >
+          </button>
+        </header>
+        <nav class="sidebar-menu">
+          <button type="button">
+            <i class="bx bx-home"></i>
+            <span>Home</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-user-circle"></i>
+            <span>Accounts</span>
+          </button>
+          <button type="button" class="has-border">
+            <i class="bx bx-cog"></i>
+            <span>Settings</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-home"></i>
+            <span>Databases</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-folder-open"></i>
+            <span>Folders</span>
+          </button>
+          <button type="button">
+            <i class="bx bx-lock-alt"></i>
+            <span>Security</span>
+          </button>
+        </nav>
+      </div>
+    </nav>
+    <script src="main.js"></script>
+  </body>
+</html>
