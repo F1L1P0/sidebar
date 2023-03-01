@@ -8,6 +8,10 @@ body {
   background-color: #121212;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   background: transparent;
   border: 0;
@@ -81,7 +85,7 @@ body.open .sidebar-burger:hover > i {
 
 .sidebar-menu {
   display: grid;
-  > button {
+  > a {
     display: flex;
     gap: 12px;
     align-items: center;
@@ -103,24 +107,25 @@ body.open .sidebar-burger:hover > i {
       border-left: 3px solid #f9f9f9;
     }
   }
-  .has-border {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  }
 }
 
-.sidebar-menu > button:hover > i,
-.sidebar-menu > button:hover > span {
+.has-border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sidebar-menu > a:hover > i,
+.sidebar-menu > a:hover > span {
   color: #bdbdbd;
 }
 
-.sidebar-menu > button > span {
+.sidebar-menu > a > span {
   color: #f9f9f9;
   opacity: 0;
   transition: all 0.4s;
 }
 
-body.open .sidebar-menu > button > span {
+body.open .sidebar-menu > a > span {
   opacity: 1;
   transition: all 0.4s;
 }
